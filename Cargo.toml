@@ -1,22 +1,20 @@
+
 [package]
-name = "ranking_dapp"
+name = "poap"
 version = "0.1.0"
-authors = [ "Thelle Codes <boltdsg@gmail.com>" ]
-edition = "2021"
+edition = "2018"
 license = "MPL-2.0"
-description = "techfiesta semi fungible token ranking dapp"
+authors = [ "bogachanyigitbasi" ]
+description = "n"
 
 [features]
 default = ["std"]
 std = ["concordium-std/std", "concordium-cis2/std"]
-wee_alloc = ["concordium-std/wee_alloc"]
 
 [dependencies]
-concordium-std = {version = "8.1", default-features = false}
-concordium-cis2 = {version = "5.1", default-features = false}
-
-[dev-dependencies]
-concordium-smart-contract-testing = "3.0"
+concordium-std = { version = "*", default-features = false }
+concordium-cis2 = { version = "*", default-features = false }
+hex = "*"
 
 [lib]
 crate-type=["cdylib", "rlib"]
